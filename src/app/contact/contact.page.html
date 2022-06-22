@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CONTACT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let person of people">
+    <button (click)="onClick(person)">
+    <ion-icon name="person-circle-outline"></ion-icon>
+    <div>
+    Name: {{person.name}}
+    </div>
+    <br>
+    <div>
+    Phone Number: {{person.phoneNumber}}
+    </div>
+    <br>
+    <div>
+    Email: {{person.email}}
+    </div>
+    <br>
+  </button>
+  </ion-card>
+    <span *ngIf="selected">
+      {{this.selected.funFact}}
+    </span>
+</ion-content>
+
+<ion-button (click) ="changePage() ">
+  home
+  </ion-button>

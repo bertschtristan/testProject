@@ -1,0 +1,49 @@
+<!-- <ion-input [(ngModel)] = "text">
+
+</ion-input>
+
+<ion-button>
+
+</ion-button> -->
+    
+<div> 
+<ion-button (click)="math(1)" >1
+</ion-button>
+<ion-button (click)="math(2)" >2
+</ion-button>
+<ion-button (click)="math(3)" >3
+</ion-button>
+</div>
+<div> 
+<ion-button (click)="math(4)" >4
+</ion-button>
+<ion-button (click)="math(5)" >5
+</ion-button>
+<ion-button (click)="math(6)" >6
+</ion-button>
+</div>
+<div> 
+<ion-button (click)="math(7)" >7
+</ion-button>
+<ion-button (click)="math(8)" >8
+</ion-button>
+<ion-button (click)="math(9)" >9
+</ion-button>
+<ion-button (click)="math(0)" >0
+</ion-button>
+</div>
+<div>
+<ion-button (click)="operator('+')">+
+</ion-button>
+<ion-button (click)="operator('=')">=
+</ion-button>
+<ion-button (click)="operator('*')">*
+</ion-button>
+<ion-button (click)="operator('-')">-
+</ion-button>
+</div>
+<ion-input value="{{this.output}}" [(ngModel)] = "text"></ion-input>
+
+<ion-button (click) ="changePage() ">
+new-page
+</ion-button>
